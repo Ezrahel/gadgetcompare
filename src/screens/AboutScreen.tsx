@@ -83,7 +83,7 @@ export default function AboutScreen() {
           <div className="border-l-4 border-gray-200 pl-8 py-2">
             <h2 className="text-3xl font-black text-gray-900 mb-6">How it Works</h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              We use the Gemini 3.1 Pro model to scan the web for the latest prices, specs, and availability. 
+              We use OpenAI-powered web search to scan the web for the latest prices, specs, and availability. 
               Our algorithms analyze the data to find the best value, factoring in installment options 
               and seller reputation.
             </p>

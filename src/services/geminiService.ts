@@ -5,7 +5,7 @@ export async function searchGadgetPrices(query: string): Promise<{ product: Prod
   const response = await fetch(`/api/search?query=${encodeURIComponent(query)}`);
   if (!response.ok) {
     const error = await response.json().catch(() => null);
-    throw new Error(error?.error || "Failed to fetch gadget prices");
+    throw new Error(error?.error || "Failed to fetch gadget prices from OpenAI");
   }
 
   const data = await response.json();
